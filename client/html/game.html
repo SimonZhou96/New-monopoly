@@ -1,0 +1,88 @@
+<!doctype html>
+<!--声明当前文档为html文档-->
+<html lang="en">
+<!--语言为英语-->
+<script src="/socket.io/socket.io.js"></script>
+<link rel="stylesheet" href="/client/css/tip-yellow/tip-yellow.css" type="text/css" />
+<link rel="stylesheet" href="/client/css/game_panel.css" type="text/css" />
+<link rel="stylesheet" href="/client/css/go_game_button/buttons.css" type="text/css" />
+<script type="text/javascript" src="/client/js/includes/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/client/js/jquery.poshytip.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="关键词">
+    <meta name="Description" content="描述">
+    <title>HTML5 大富翁游戏</title>
+
+</head>
+
+<body>
+    <div id="game">
+        <canvas id="canvas" width="960" height="560" onmousemove=showTooltip(event)></canvas>
+        <div id="buttons">
+            <span class="button-wrap" id="dice_wrap">
+                <button id='dice' onClick="throw_one_dice()" class="button button-wrap button-raised button-primary">
+                    <i class="fa fa-cloud">Dice</i>
+                </button>
+            </span>
+            <span class="button-wrap" id="buy_wrap">
+                <button id='buy' onClick="buy_property()" class="button button-wrap button-raised button-primary">
+                    <i class="fa fa-cloud">Buy</i>
+                </button>
+            </span>
+            <span class="button-wrap" id="build_wrap">
+                <button id='build' onClick="build_property()" class="button button-wrap button-raised button-primary">
+                    <i class="fa fa-cloud">Build</i>
+                </button>
+            </span>
+            <span class="button-wrap" id="skip_wrap">
+                <button id='skip' onClick="skip_action()" class="button button-wrap button-raised button-primary">
+                    <i class="fa fa-cloud">Skip</i>
+                </button>
+            </span>
+            <span class="button-wrap" id="up_wrap">
+                <button id='up' onClick="choose_direction('up')" class="button button-3d button-circle button-raised button-highlight">
+                    <i class="fa fa-cloud">Up</i>
+                </button>
+            </span>
+            <span class="button-wrap" id="down_wrap">
+                <button id='down' onClick="choose_direction('down')" class="button button-3d button-circle button-raised button-highlight">
+                    <i class="fa fa-cloud">Down</i>
+                </button>
+            </span>
+            <span class="button-wrap" id="left_wrap">
+                <button id='left' onClick="choose_direction('left')" class="button button-3d button-circle button-raised button-highlight">
+                    <i class="fa fa-cloud">Left</i>
+                </button>
+            </span>
+            <span class="button-wrap" id="right_wrap">
+                <button id='right' onClick="choose_direction('right')" class="button button-3d button-circle button-raised button-highlight">
+                    <i class="fa fa-cloud">Right</i>
+                </button>
+            </span>
+        </div>
+        <audio src="/client/music/exciting.m4a" controls="controls" autoplay="autoplay" loop="loop" style="position:absolute;bottom:1%;left:2%"></audio>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="/client/js/client.js"></script>
+<script type="text/javascript" src="/client/js/game_panel.js"></script>
+
+<audio id='Woman_1' src="/client/music/Woman_1.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Woman_2' src="/client/music/Woman_2.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Woman_3' src="/client/music/Woman_3.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Woman_4' src="/client/music/Woman_4.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Woman_5' src="/client/music/Woman_5.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Woman_6' src="/client/music/Woman_6.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Woman_Order' src="/client/music/Woman_Order.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Man_1' src="/client/music/Man_1.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Man_2' src="/client/music/Man_2.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Man_3' src="/client/music/Man_3.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Man_4' src="/client/music/Man_4.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Man_5' src="/client/music/Man_5.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Man_6' src="/client/music/Man_6.ogg" hidden='hidden' controls="none" ></audio>
+<audio id='Man_Order' src="/client/music/Man_Order.ogg" hidden='hidden' controls="none" ></audio>
+</html>

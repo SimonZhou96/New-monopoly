@@ -1,0 +1,14 @@
+diff a/client/html/room.html b/client/html/room.html	(rejected hunks)
+@@ -4,6 +4,12 @@
+ <script type="text/javascript" src="/client/js/room.js"></script>
+ <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
++	<link rel="shortcut icon" href="../favicon.ico"> 
++	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />	
++	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css' />
++	<link rel="stylesheet" type="text/css" href="css/go_game_button/demo.css" />
++	<link rel="stylesheet" type="text/css" href="css/go_game_button/style6.css" />
++	<link rel="stylesheet" type="text/css" href="http://www.cssmoban.com/statics/css/code-demo.css" />
+ </head>
+ <style type="text/css">
+     img {

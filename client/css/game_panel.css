@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+}
+
+#game
+{
+    background-image: url('/client/images/background.png');
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+#canvas
+{
+    border-radius: 20px;
+    border-style:outset;
+    top: 15px;
+    left: 15px;
+    width: 75%;
+    height: auto;
+    position: relative;
+    /* float: left; */
+}
+
+#buttons{
+    position: absolute;
+    top: 0px;
+    left: 70%;
+    width: 30%;
+    height: 100%;
+}
+
+#dice_wrap {
+    position: absolute;
+    padding: 2px;   
+    top: 5%;
+    right: 30%;
+    
+}
+
+#buy_wrap {
+    position: absolute;
+    padding: 2px;   
+    top: 15%;
+    right: 30%;
+}
+
+#build_wrap {
+    position: absolute;
+    padding: 2px;   
+    top: 25%;
+    right: 30%;
+}
+
+#skip_wrap {
+    position: absolute;
+    padding: 2px;   
+    top: 35%;
+    right: 30%;
+}
+
+#up_wrap {
+    position: absolute;
+    padding: 0px;   
+    top: 54%;
+    right: 30%;
+}
+
+
+#down_wrap {
+    position: absolute;
+    padding: 0px;   
+    top: 80%;
+    right: 30%;
+}
+
+#left_wrap {
+    position: absolute;
+    padding: 0px;   
+    top: 67%;
+    right: 50%;
+}
+
+#right_wrap {
+    position: absolute;
+    padding: 0px;   
+    top: 67%;
+    right: 10%;
+}

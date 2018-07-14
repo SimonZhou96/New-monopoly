@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<<<<<<< HEAD
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/client/js/client.js"></script>
+    <script type="text/javascript" src="/client/js/lobby.js"></script>
+    <head>
+        <title>游戏房间</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta charset="utf-8" />
+        <style type="text/css">
+			body{background:url("/client/images/bitch.gif") ;}
+            #create {
+                position: relative;
+                color: rgba(255, 255, 255, 1);
+                text-decoration: none;
+                background-color: rgba(219, 87, 5, 1);
+                font-family: 'Yanone Kaffeesatz';
+                font-weight: 700;
+                font-size: 3em;
+                display: block;
+                padding: 4px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                border-radius: 8px;
+                -webkit-box-shadow: 0px 9px 0px rgb(219, 217, 215), 0px 9px 25px rgba(0, 0, 0, .7);
+                -moz-box-shadow: 0px 9px 0px rgb(206, 216, 219), 0px 9px 25px rgba(0, 0, 0, .7);
+                box-shadow: 0px 9px 0px rgb(219, 211, 204), 0px 9px 25px rgba(0, 0, 0, .7);
+                margin: 100px auto;
+                width: 160px;
+                text-align: center;
+
+                -webkit-transition: all .1s ease;
+                -moz-transition: all .1s ease;
+                -ms-transition: all .1s ease;
+                -o-transition: all .1s ease;
+                transition: all .1s ease;
+            }
+
+            a:active {
+                -webkit-box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+                -moz-box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+                box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+                position: relative;
+                top: 6px;
+            }
+
+            #create {
+                text-align: center;
+
+                background-color: antiquewhite;
+            }
+
+            #person {
+                position: absolute;
+                width: 200px;
+            }
+
+            #person_info {
+
+                height: 200px;
+                border: dashed;
+            }
+
+            html,
+            body {
+                color: #222;
+                font-family: Microsoft YaHei, Helvitica, Verdana, Tohoma, Arial, san-serif;
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+            }
+
+            img {
+                border: 0;
+                width: 400px;
+                height: 200px;
+            }
+
+            ul {
+                list-style: none outside none;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: #eee;
+            }
+
+            body .mainmenu:after {
+                clear: both;
+                content: " ";
+                display: block;
+            }
+
+            body .mainmenu li {
+                border: groove;
+                float: left;
+                margin-left: 2.5%;
+                margin-top: 2.5%;
+                width: 30%;
+                border-radius: 3px;
+                overflow: hidden;
+            }
+
+            body .mainmenu li a {
+                display: block;
+                color: #FFF;
+                text-align: center
+            }
+
+            body .mainmenu li a b {
+                display: block;
+                height: 80px;
+            }
+
+            body .mainmenu li a img {
+                margin: 15px auto 15px;
+                width: 200px;
+                height: 50px;
+            }
+
+            body .mainmenu li a span {
+                display: block;
+                height: 30px;
+                border: double;
+                line-height: 30px;
+                background-color: #fcffff;
+                color: #999;
+                font-size: 14px;
+            }
+
+            body .mainmenu li:nth-child(8n+1) {
+                background-color: #dbd9d2
+            }
+
+            body .mainmenu li:nth-child(8n+2) {
+                background-color: #dbdbd4
+            }
+
+            body .mainmenu li:nth-child(8n+3) {
+                background-color: #d6dbd9
+            }
+
+            body .mainmenu li:nth-child(8n+4) {
+                background-color: #dbd3da
+            }
+
+            body .mainmenu li:nth-child(8n+5) {
+                background-color: #dbd5d9
+            }
+
+            body .mainmenu li:nth-child(8n+6) {
+                background-color: #dbd6d7
+            }
+
+            body .mainmenu li:nth-child(8n+7) {
+                background-color: #dbd2d9
+            }
+
+            body .mainmenu li:nth-child(8n+8) {
+                background-color: #d8d7db
+            }
+			#audio
+			{
+				position:relative;
+				text-align:center;
+			}
+			audio_div
+			{
+				
+			}
+        </style>
+
+    </head>
+
+    <body>
+        <div class="mainmenu" id="mainmenu">
+
+        </div	>
+		<div class>
+        <!-- <div class="person_info" id="person_info">
+            <img id="person" src="/client/images/timg.gif" />
+            <li>已上线</li>
+        </div> -->
+<<<<<<< HEAD
+		</div>
+		<div class = "button_panel" id = "button_panel">
+        <!-- <button id="create" onclick="create_room()"background:url("/client/images/bitch.gif")>创建</button> -->
+		
+		<!-- </div> -->
+		<!-- <div class = "audio_div"> -->
+		<!-- <audio id = "audio" src="/client/music/welcome.m4a" controls="controls" autoplay="autoplay" loop="loop" ></audio> -->
+		<!-- </div> -->
+		
+        <!-- <button id="create" onclick="create_room()">创建</button> -->
+        
+<!-- >>>>>>> afe432f435f3d574455576643a8b375af4b8e6a5 -->
+    </body>
+=======
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/client/js/client.js"></script>
+<script type="text/javascript" src="/client/js/lobby.js"></script>
+<link rel="stylesheet" href="/client/css/go_game_button/buttons.css" type="text/css" />
+
+<head>
+    <title>游戏房间</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta charset="utf-8" />
+    <style type="text/css">
+        body {
+            background: url("/client/images/bitch.gif");
+        }
+
+        #create {
+            position: relative;
+            color: rgba(255, 255, 255, 1);
+            text-decoration: none;
+            background-color: rgba(219, 87, 5, 1);
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 700;
+            font-size: 3em;
+            display: block;
+            padding: 4px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            -webkit-box-shadow: 0px 9px 0px rgb(219, 217, 215), 0px 9px 25px rgba(0, 0, 0, .7);
+            -moz-box-shadow: 0px 9px 0px rgb(206, 216, 219), 0px 9px 25px rgba(0, 0, 0, .7);
+            box-shadow: 0px 9px 0px rgb(219, 211, 204), 0px 9px 25px rgba(0, 0, 0, .7);
+            margin: 100px auto;
+            width: 160px;
+            text-align: center;
+
+            -webkit-transition: all .1s ease;
+            -moz-transition: all .1s ease;
+            -ms-transition: all .1s ease;
+            -o-transition: all .1s ease;
+            transition: all .1s ease;
+        }
+
+        a:active {
+            -webkit-box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+            -moz-box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+            box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+            position: relative;
+            top: 6px;
+        }
+
+        #create {
+            text-align: center;
+
+            background-color: antiquewhite;
+        }
+
+        #person {
+            position: absolute;
+            width: 200px;
+        }
+
+        #person_info {
+
+            height: 200px;
+            border: dashed;
+        }
+
+        html,
+        body {
+            color: #222;
+            font-family: Microsoft YaHei, Helvitica, Verdana, Tohoma, Arial, san-serif;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+            width: 400px;
+            height: 200px;
+        }
+
+        ul {
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #eee;
+        }
+
+        body .mainmenu:after {
+            clear: both;
+            content: " ";
+            display: block;
+        }
+
+        body .mainmenu li {
+            border: groove;
+            float: left;
+            margin-left: 2.5%;
+            margin-top: 2.5%;
+            width: 30%;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        body .mainmenu li a {
+            display: block;
+            color: #FFF;
+            text-align: center
+        }
+
+        body .mainmenu li a b {
+            display: block;
+            height: 80px;
+        }
+
+        body .mainmenu li a img {
+            margin: 15px auto 15px;
+            width: 200px;
+            height: 50px;
+        }
+
+        body .mainmenu li a span {
+            display: block;
+            height: 30px;
+            border: double;
+            line-height: 30px;
+            background-color: #fcffff;
+            color: #999;
+            font-size: 14px;
+        }
+
+        body .mainmenu li:nth-child(8n+1) {
+            background-color: #dbd9d2
+        }
+
+        body .mainmenu li:nth-child(8n+2) {
+            background-color: #dbdbd4
+        }
+
+        body .mainmenu li:nth-child(8n+3) {
+            background-color: #d6dbd9
+        }
+
+        body .mainmenu li:nth-child(8n+4) {
+            background-color: #dbd3da
+        }
+
+        body .mainmenu li:nth-child(8n+5) {
+            background-color: #dbd5d9
+        }
+
+        body .mainmenu li:nth-child(8n+6) {
+            background-color: #dbd6d7
+        }
+
+        body .mainmenu li:nth-child(8n+7) {
+            background-color: #dbd2d9
+        }
+
+        body .mainmenu li:nth-child(8n+8) {
+            background-color: #d8d7db
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mainmenu" id="mainmenu">
+
+    </div>
+
+
+    <button id="create" onclick="create_room()" background:url( "/client/images/bitch.gif")>创建</button>
+    
+    <audio src="/client/music/welcome.m4a" controls="controls" autoplay="autoplay" loop="loop"></audio>
+    <span class="button-wrap" id='reconnect' style="visibility:hidden; position:absolute; right:5%; bottom:5%; padding:5px">
+        <button onClick="reconnect()" class="button button-wrap button-raised button-caution" style="width:120px; padding:0%">
+            <i class="fa fa-cloud">Reconnect</i>
+        </button>
+    </span>
+</body>
+>>>>>>> a25d588cdd2a31a80b21cb150d2a8c8156df3e31
+
+</html>

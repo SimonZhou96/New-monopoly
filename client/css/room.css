@@ -1,0 +1,121 @@
+body {
+    background-image: url('/client/images/background.png');
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#main_panel {
+    float: left;
+    text-align: center;
+    
+}
+
+.button-room {
+    padding: 2px;
+    text-align: center;
+}
+
+#button_p {
+    text-align: center;
+}
+
+.slider-container {
+    left: -40px;
+}
+
+.slide_img {
+    border: outset;
+    border-radius: 40px;
+    border-width: 5px;
+    border-style:outset;
+    border-color: lightblue;
+    text-align: center;
+    height: 95%;
+}
+
+#roles{
+    padding: 2px;
+    /* float: right; */
+    border: outset;
+    border-radius: 40px;
+    border-width: 5px;
+    border-style:outset;
+    border-color: lightblue;
+    position: absolute;
+    right: 4%;
+    top: 5%;
+    width: 21%;
+    height: 90%;
+}
+
+.role{
+    position:relative;
+    margin-top: 10px;
+    margin-left: 35px;
+    border: none;
+    float: left;
+    width: 80px;
+    height: 120px;
+}
+
+.role_img {
+    cursor:pointer;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style:outset;
+    border-color: lightblue;
+    width : 70px;
+    height : 105px;
+    
+    background-repeat: no-repeat;
+    background-position: -70px 0px;
+    background-size:  210px 420px;
+}
+
+.blue {
+    position: absolute;
+    text-shadow: 
+    2px 2px 1px rgba(0,0,0,.4),
+    0 0 20px #42A5F5,  
+    0 0 40px rgba(33, 150, 243, .75),
+    0 0 50px rgba(33, 150, 243, .75),
+    0 0 60px rgba(33, 150, 243, .75);
+   
+}
+
+.blue:before{
+    content:'';
+    position: absolute;
+    background: rgba(66, 165, 245, .25);
+    z-index: -1;
+    opacity: .7;
+    filter: blur(30px);
+    width: 100%;
+    height: 100%;
+  }
+
+.text_username{
+    font-size: 24px;
+    color: transparent;
+    text-align: center;
+    margin-top: -9px;
+    background-color : rgb(0, 7, 31);
+    text-shadow: 2px -2px rgb(4, 38, 231), 1px -1px white;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text 
+}
+
+.text_ready{
+    font-size: 24px;
+    color: transparent;
+    text-align: center;
+    margin-top: -59px;
+    color: #3efd2d;
+    letter-spacing: 0;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135
+}

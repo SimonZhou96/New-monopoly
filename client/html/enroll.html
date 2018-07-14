@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="Pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache"> 
+<meta http-equiv="Expires" content="0"> 
+<script type="text/javascript" src="/client/js/includes/jquery-1.4.2.min.js"></script>
+<script type = "text/javascript" src = "/client/js/enroll.js"></script>
+<title>后台注册</title> 
+<link href="/client/css/login.css" type="text/css" rel="stylesheet"> 
+</head> 
+<body> 
+<dialog>
+</dialog>
+<div class="enroll">
+    <div class="message"><strong>New Monopoly</strong></div>
+    <div id="darkbannerwrap"></div>
+    
+    <div>
+		<input name="action" value="login" type="hidden">
+		<input id = "un" name="username" placeholder="用户名" required="" type="text">
+		<hr class="hr15">
+		<input id = "pw" name="password" placeholder="密码" required="" type="password">
+		<hr class="hr15">
+		<input id = "pw2" name="password" placeholder="确认密码" required="" type="password">
+		<hr class="hr15">
+		<button	value="注册" name = "注册" onclick=click_Button_enroll() style="width:100%;height:30%;" type="button">确定</button>
+		<hr class="hr20">
+		<a onClick="alert('请联系管理员')">帮助</a> <a onClick="alert('请联系管理员')">忘记密码</a>
+	</div>
+
+	
+</div>
+
+</body>
+</html>

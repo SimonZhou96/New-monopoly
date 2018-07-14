@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>login</title>
+<script type="text/javascript" src="/client/js/connection.js"></script>
+<link rel="stylesheet" type="text/css" href="/client/css/normalize.css" >
+<link rel="stylesheet" type="text/css" href="/client/css/demo.css" >
+<!--必要样式-->
+<link rel="stylesheet" type="text/css" href="/client/css/component.css" >
+<!--[if IE]>
+<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+		<div class="container demo-1">
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<canvas id="demo-canvas"></canvas>
+					<div class="logo_box">
+						<h1>New Monopoly</h1>
+						</br>
+						<form action="#" name="f" method="post">
+							<div class="input_outer">
+								<span class="u_user"></span>
+								<input id = 'myAccount' name="logname" class="text" style="color: #FFFFFF !important" type="text" placeholder="请输入账户">
+							</div>
+							<div class="input_outer">
+								<span class="us_uer"></span>
+								<input input id = 'myPassword' name="logpass" class="text" style="color: #FFFFFF !important; position:absolute; z-index:100;"value="" type="password" placeholder="请输入密码">
+							</div>
+							
+							<div class="mb2"><a id = 'log_in' class="act-but submit" href = 'panel_log_in()' style="color: #FFFFFF;text-align:center;">登录</a></div>
+							<div class="mb2"><a id = 'enroll' class="act-but submit" href = '/client/html/enroll.html' style="color: #FFFFFF">注册</a></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="/client/js/TweenLite.min.js"></script>
+		<script src="/client/js/EasePack.min.js"></script>
+		<script src="/client/js/rAF.js"></script>
+		<script src="/client/js/demo-1.js"></script>
+	</body>
+</html>

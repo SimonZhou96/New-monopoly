@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/client/js/client.js"></script>
+    <script src="/client/js/jquery-3.2.1.min.js"></script>
+    <head>
+        <title>Real time multi-player games with HTML5</title>
+        <style type="text/css">
+            html, body{
+                background: #212121;
+                color: #fff;
+                margin: 0;
+                padding: 0;
+            }
+            #canvas {
+                position: : absolute;
+                left: 0; right:0; top: 0; bottom: 0;
+                margin: auto;
+            }
+        </style>
+
+        
+    </head>
+    <body>
+        <canvas id="canvas"> </canvas>
+
+        <button onclick="clickBtn()">Click!</button>
+        <button onclick="calInJs()">CalInJs</button>
+        <button onclick="calInPy()">CalInPy</button>
+    </body>
+</html>
